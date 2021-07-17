@@ -189,7 +189,7 @@
 			<nav>
 				
 				<div class="dearmsdan-count">
-					<span>文章</span>5
+					<span>文章</span>7
 					<span>标签</span>0
 					<span>分类</span>0
 				</div>		
@@ -291,6 +291,14 @@
       <ul>
         
           <li style="font-size: 16px;">
+            <a href="/2021/07/17/BLOG5/">Flying Birds&#39; blog 5th</a>
+          </li>
+        
+          <li style="font-size: 16px;">
+            <a href="/2021/07/17/blog4/">Flying Birds&#39; blog 4th</a>
+          </li>
+        
+          <li style="font-size: 16px;">
             <a href="/2021/07/16/Blog3/">Flying Birds&#39; blog 3rd</a>
           </li>
         
@@ -300,14 +308,6 @@
         
           <li style="font-size: 16px;">
             <a href="/404.html">Oh&gt;..&lt; 无法访问!</a>
-          </li>
-        
-          <li style="font-size: 16px;">
-            <a href="/2021/07/12/BLOG1/">Flying Birds&#39; blog 1st</a>
-          </li>
-        
-          <li style="font-size: 16px;">
-            <a href="/2021/07/09/hello-world/">Welcome Back AM1ngkk!</a>
           </li>
         
       </ul>
@@ -763,7 +763,7 @@ var $main = document.querySelector('.main');
 <aside id="article-toc" class="fixed-toc">
     <div id="article-toc-inner">
         <strong class="sidebar-title">目录</strong>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Bird%E7%B1%BB%E6%80%9D%E8%B7%AF%E8%A6%81%E7%82%B9"><span class="toc-text">Bird类思路要点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bird%E5%8A%A8%E7%94%BB%E5%8E%9F%E7%90%86"><span class="toc-text">Bird动画原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bird%E4%B8%ADstep%EF%BC%9A%E7%A7%BB%E5%8A%A8%E4%B8%80%E6%AD%A5"><span class="toc-text">Bird中step：移动一步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bird%E7%B1%BB%E7%A2%B0%E6%92%9E%E5%88%A4%E6%96%AD%EF%BC%88%E6%B8%B8%E6%88%8F%E4%B8%8D%E7%A2%B0%E6%92%9E%E7%9A%84%E8%A7%84%E5%88%99%EF%BC%89"><span class="toc-text">Bird类碰撞判断（游戏不碰撞的规则）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Welcome-back-AM1ng"><span class="toc-text">Welcome back AM1ng!</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Bird%E7%B1%BB%E6%80%9D%E8%B7%AF%E8%A6%81%E7%82%B9"><span class="toc-text">Bird类思路要点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bird%E5%8A%A8%E7%94%BB%E5%8E%9F%E7%90%86"><span class="toc-text">Bird动画原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bird%E4%B8%ADstep%EF%BC%9A%E7%A7%BB%E5%8A%A8%E4%B8%80%E6%AD%A5"><span class="toc-text">Bird中step：移动一步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bird%E7%B1%BB%E7%A2%B0%E6%92%9E%E5%88%A4%E6%96%AD%EF%BC%88%E6%B8%B8%E6%88%8F%E4%B8%8D%E7%A2%B0%E6%92%9E%E7%9A%84%E8%A7%84%E5%88%99%EF%BC%89"><span class="toc-text">Bird类碰撞判断（游戏不碰撞的规则）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bird%E8%B5%B7%E9%A3%9E"><span class="toc-text">Bird起飞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Welcome-back-AM1ng"><span class="toc-text">Welcome back AM1ng!</span></a></li></ol>
     </div>
 </aside>
 </div>
@@ -809,6 +809,8 @@ var $main = document.querySelector('.main');
 <p>移动中根据间隔时间需要计算鸟出现的坐标以及倾斜角展示鸟下落或者上飞的一个过程。</p>
 <h3 id="Bird类碰撞判断（游戏不碰撞的规则）"><a href="#Bird类碰撞判断（游戏不碰撞的规则）" class="headerlink" title="Bird类碰撞判断（游戏不碰撞的规则）"></a>Bird类碰撞判断（游戏不碰撞的规则）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  //检测小鸟是否碰撞到地面</span><br><span class="line">  public boolean hit(Ground ground)</span><br><span class="line">  &#123;</span><br><span class="line">    boolean hit =y+size/2&gt;ground.y;</span><br><span class="line">    <span class="keyword">if</span>(hit)</span><br><span class="line">    &#123;</span><br><span class="line">      y=ground.y-size/2;</span><br><span class="line">      alpha=Math.PI/2;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> hit;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  //检测小鸟是否撞到柱子</span><br><span class="line">  public boolean hit(Column column)</span><br><span class="line">  &#123;</span><br><span class="line">    //检测是否在柱子范围内</span><br><span class="line">    <span class="keyword">if</span>(x&gt;column.x-column.width/2-size/2&amp;&amp;x&lt;column.x+column.width/2+size/2)</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">if</span>(y&gt;column.y-column.gap/2+size/2&amp;&amp;y&lt;column.y+column.gap/2-size/2) <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">      <span class="built_in">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>hit类用boolean类型定义返回值可以选用0或1方便之后的判断是否碰撞（即0或1）<br>考虑碰撞的两个需要同时满足的因素：一是小鸟是否会从侧面撞到柱子所以调用到column.width 二是在满足一的条件下小鸟坐标是否位于间隙（gap）坐标内</p>
+<h3 id="Bird起飞"><a href="#Bird起飞" class="headerlink" title="Bird起飞"></a>Bird起飞</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//向上飞行</span><br><span class="line">  public void <span class="function"><span class="title">flappy</span></span>()</span><br><span class="line">  &#123;</span><br><span class="line">    //重置速度</span><br><span class="line">    speed=v0;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>对鼠标左键进行监听，当点击鼠标左键时，小鸟会获得一个向上的速度，当松开鼠标左键的时候，小鸟就会坠落。</p>
 <h3 id="Welcome-back-AM1ng"><a href="#Welcome-back-AM1ng" class="headerlink" title="Welcome back AM1ng!"></a>Welcome back AM1ng!</h3>
 			  </article>
 		</div>
