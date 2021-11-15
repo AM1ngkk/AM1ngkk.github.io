@@ -189,7 +189,7 @@
 			<nav>
 				
 				<div class="dearmsdan-count">
-					<span>文章</span>9
+					<span>文章</span>10
 					<span>标签</span>0
 					<span>分类</span>0
 				</div>		
@@ -272,7 +272,7 @@
 	  <a href="javascript:;" class="nav-togg" target="_self" ><span>文章归档</span>
 	  </a>
     <div>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
     </div>
   </li>
   
@@ -291,6 +291,10 @@
       <ul>
         
           <li style="font-size: 16px;">
+            <a href="/2021/11/15/Blog8/">算法中的贪心算法</a>
+          </li>
+        
+          <li style="font-size: 16px;">
             <a href="/2021/10/24/Blog7/">算法中的动态规划</a>
           </li>
         
@@ -304,10 +308,6 @@
         
           <li style="font-size: 16px;">
             <a href="/2021/07/17/blog4/">Flying Birds&#39; blog 4th</a>
-          </li>
-        
-          <li style="font-size: 16px;">
-            <a href="/2021/07/16/Blog3/">Flying Birds&#39; blog 3rd</a>
           </li>
         
       </ul>
@@ -763,7 +763,7 @@ var $main = document.querySelector('.main');
 <aside id="article-toc" class="fixed-toc">
     <div id="article-toc-inner">
         <strong class="sidebar-title">目录</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E7%9A%84%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="toc-text">新的需要了解的头文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%B0%E9%9D%A2%E7%B1%BB%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-text">地面类初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ground%E7%B1%BB%E5%B7%A6%E7%A7%BB"><span class="toc-text">Ground类左移</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%B1%E5%AD%90%E7%B1%BB%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-text">柱子类初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%B1%E5%AD%90%E7%B1%BB%E7%A7%BB%E5%8A%A8"><span class="toc-text">柱子类移动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Welcome-back-AM1ng"><span class="toc-text">Welcome back AM1ng!</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%B0%E9%9D%A2%E7%B1%BB%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-text">地面类初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ground%E7%B1%BB%E5%B7%A6%E7%A7%BB"><span class="toc-text">Ground类左移</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%B1%E5%AD%90%E7%B1%BB%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-text">柱子类初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%B1%E5%AD%90%E7%B1%BB%E7%A7%BB%E5%8A%A8"><span class="toc-text">柱子类移动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Welcome-back-AM1ng"><span class="toc-text">Welcome back AM1ng!</span></a></li></ol>
     </div>
 </aside>
 </div>
@@ -803,7 +803,7 @@ var $main = document.querySelector('.main');
 		<div>
 			  <article>
 				<p>关于实践周的第一个项目选择了制作Flying Birds小游戏。接下来是地面类和柱子类详细参数的设置。</p>
-<h2 id="新的需要了解的头文件"><a href="#新的需要了解的头文件" class="headerlink" title="新的需要了解的头文件"></a>新的需要了解的头文件</h2><h3 id="地面类初始化"><a href="#地面类初始化" class="headerlink" title="地面类初始化"></a>地面类初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public Ground() throws Exception</span><br><span class="line">    &#123;</span><br><span class="line">        image =new ImageIcon(<span class="string">&quot;source/ground.png&quot;</span>).getImage();//原图片</span><br><span class="line">        width=image.getWidth(null);//使用 img.getWidth(null); 图片加载到内存中，可获图片真实宽度</span><br><span class="line">        height=image.getHeight(null);//使用 img.getHeight(null); 图片加载到内存中，可获图片真实高度</span><br><span class="line">        x=0;</span><br><span class="line">        y=500;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="地面类初始化"><a href="#地面类初始化" class="headerlink" title="地面类初始化"></a>地面类初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public Ground() throws Exception</span><br><span class="line">    &#123;</span><br><span class="line">        image =new ImageIcon(<span class="string">&quot;source/ground.png&quot;</span>).getImage();//原图片</span><br><span class="line">        width=image.getWidth(null);//使用 img.getWidth(null); 图片加载到内存中，可获图片真实宽度</span><br><span class="line">        height=image.getHeight(null);//使用 img.getHeight(null); 图片加载到内存中，可获图片真实高度</span><br><span class="line">        x=0;</span><br><span class="line">        y=500;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 <p>设计Gound类里默认读取图片资源中的ground的图片利用image.getWidth(null) image.getHeight(null)读取图片的高宽。<br>x y来控制图片放置的位置。</p>
 <h3 id="Ground类左移"><a href="#Ground类左移" class="headerlink" title="Ground类左移"></a>Ground类左移</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//左移</span><br><span class="line">    public void <span class="function"><span class="title">step</span></span>()</span><br><span class="line">    &#123;</span><br><span class="line">        x-=4;</span><br><span class="line">        <span class="keyword">if</span>(x&lt;=-109)</span><br><span class="line">        &#123;</span><br><span class="line">            x=0;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 <p>同样名为step类意味小鸟移动其实是用地面的图像左移的动画来实现的。</p>

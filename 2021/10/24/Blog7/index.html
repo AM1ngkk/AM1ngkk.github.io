@@ -189,7 +189,7 @@
 			<nav>
 				
 				<div class="dearmsdan-count">
-					<span>文章</span>9
+					<span>文章</span>10
 					<span>标签</span>0
 					<span>分类</span>0
 				</div>		
@@ -272,7 +272,7 @@
 	  <a href="javascript:;" class="nav-togg" target="_self" ><span>文章归档</span>
 	  </a>
     <div>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
     </div>
   </li>
   
@@ -291,6 +291,10 @@
       <ul>
         
           <li style="font-size: 16px;">
+            <a href="/2021/11/15/Blog8/">算法中的贪心算法</a>
+          </li>
+        
+          <li style="font-size: 16px;">
             <a href="/2021/10/24/Blog7/">算法中的动态规划</a>
           </li>
         
@@ -304,10 +308,6 @@
         
           <li style="font-size: 16px;">
             <a href="/2021/07/17/blog4/">Flying Birds&#39; blog 4th</a>
-          </li>
-        
-          <li style="font-size: 16px;">
-            <a href="/2021/07/16/Blog3/">Flying Birds&#39; blog 3rd</a>
           </li>
         
       </ul>
@@ -763,7 +763,7 @@ var $main = document.querySelector('.main');
 <aside id="article-toc" class="fixed-toc">
     <div id="article-toc-inner">
         <strong class="sidebar-title">目录</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#AM1ng%E2%80%99s-Blog%EF%BC%81"><span class="toc-text">AM1ng’s Blog！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E9%A2%98%E7%9B%AE%EF%BC%9A%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E6%9C%80%E9%95%BF%E5%AD%90%E5%BA%8F%E5%88%97"><span class="toc-text">实验题目：单调递增最长子序列</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E6%8F%8F%E8%BF%B0"><span class="toc-text">算法描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF%E6%8F%8F%E8%BF%B0"><span class="toc-text">思路描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BD%93%E4%BC%9A%E5%92%8C%E6%80%9D%E8%80%83"><span class="toc-text">动态规划的个人体会和思考</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#See-U-next-time%EF%BC%81"><span class="toc-text">See U next time！</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#AM1ng%E2%80%99s-Algorithm-Blog%EF%BC%81"><span class="toc-text">AM1ng’s Algorithm Blog！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E9%A2%98%E7%9B%AE%EF%BC%9A%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E6%9C%80%E9%95%BF%E5%AD%90%E5%BA%8F%E5%88%97"><span class="toc-text">实验题目：单调递增最长子序列</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E6%8F%8F%E8%BF%B0"><span class="toc-text">算法描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF%E6%8F%8F%E8%BF%B0"><span class="toc-text">思路描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BD%93%E4%BC%9A%E5%92%8C%E6%80%9D%E8%80%83"><span class="toc-text">动态规划的个人体会和思考</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#See-U-next-time%EF%BC%81"><span class="toc-text">See U next time！</span></a></li></ol></li></ol>
     </div>
 </aside>
 </div>
@@ -803,7 +803,7 @@ var $main = document.querySelector('.main');
 		<div>
 			  <article>
 				<p>算法导论这本书是这样介绍这个算法的，动态规划与分治方法类似，都是通过组合子问题的解来来求解原问题的。再来了解一下什么是分治方法，以及这两者之间的差别，分治方法将问题划分为互不相交的子问题，递归的求解子问题，再将它们的解组合起来，求出原问题的解。而动态规划与之相反，动态规划应用与子问题重叠的情况，即不同的子问题具有公共的子子问题（子问题的求解是递归进行的，将其划分为更小的子子问题）。<br>态规划对于每一个子子问题只求解一次，将其解保存在一个表格里面，从而无需每次求解一个子子问题时都重新计算，避免了不必要的计算工作。</p>
-<h2 id="AM1ng’s-Blog！"><a href="#AM1ng’s-Blog！" class="headerlink" title="AM1ng’s Blog！"></a>AM1ng’s Blog！</h2><h2 id="实验题目：单调递增最长子序列"><a href="#实验题目：单调递增最长子序列" class="headerlink" title="实验题目：单调递增最长子序列"></a>实验题目：单调递增最长子序列</h2><h3 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">void <span class="function"><span class="title">solve</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">for</span>(int i = 1; i &lt;= n; ++i)</span><br><span class="line">    F[i] = 1;</span><br><span class="line">   <span class="keyword">for</span>(int i = 1; i &lt;= n; ++i)</span><br><span class="line">   &#123;</span><br><span class="line">       <span class="keyword">for</span>(int j = 1; j &lt; i; ++j)</span><br><span class="line">       &#123;</span><br><span class="line">           <span class="keyword">if</span>(a[i] &gt; a[j] &amp;&amp; F[i] &lt; F[j] + 1)</span><br><span class="line">            F[i] = F[j] + 1;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">for</span>(int i = 1; i &lt;= n; ++i)</span><br><span class="line">    <span class="keyword">if</span>(F[i] &gt; max_)</span><br><span class="line">        max_ = F[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="AM1ng’s-Algorithm-Blog！"><a href="#AM1ng’s-Algorithm-Blog！" class="headerlink" title="AM1ng’s Algorithm Blog！"></a>AM1ng’s Algorithm Blog！</h2><h2 id="实验题目：单调递增最长子序列"><a href="#实验题目：单调递增最长子序列" class="headerlink" title="实验题目：单调递增最长子序列"></a>实验题目：单调递增最长子序列</h2><h3 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">void <span class="function"><span class="title">solve</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">for</span>(int i = 1; i &lt;= n; ++i)</span><br><span class="line">    F[i] = 1;</span><br><span class="line">   <span class="keyword">for</span>(int i = 1; i &lt;= n; ++i)</span><br><span class="line">   &#123;</span><br><span class="line">       <span class="keyword">for</span>(int j = 1; j &lt; i; ++j)</span><br><span class="line">       &#123;</span><br><span class="line">           <span class="keyword">if</span>(a[i] &gt; a[j] &amp;&amp; F[i] &lt; F[j] + 1)</span><br><span class="line">            F[i] = F[j] + 1;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">for</span>(int i = 1; i &lt;= n; ++i)</span><br><span class="line">    <span class="keyword">if</span>(F[i] &gt; max_)</span><br><span class="line">        max_ = F[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/FangXiaXin/article/details/80595797?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163506951716780271569457%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163506951716780271569457&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-80595797.pc_search_all_es&utm_term=%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AAO(n%5E2)%E6%97%B6%E9%97%B4%E7%9A%84%E7%AE%97%E6%B3%95%EF%BC%8C%E6%89%BE%E5%87%BA%E7%94%B1n%E4%B8%AA%E6%95%B0%E7%BB%84%E6%88%90%E7%9A%84%E5%BA%8F%E5%88%97%E7%9A%84%E6%9C%80%E9%95%BF%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97%E3%80%82&spm=1018.2226.3001.4187">单调递增最长子序列</a></p>
 <h3 id="思路描述"><a href="#思路描述" class="headerlink" title="思路描述"></a>思路描述</h3><p>1 各数组解释<br>    int a[1024]; //原数组</p>
