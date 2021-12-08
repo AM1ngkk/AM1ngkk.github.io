@@ -11,7 +11,7 @@
   
 
 <head>
-	<title>归档 -  Hi AM1ng！</title>
+	<title>算法中的回溯算法 -  Hi AM1ng！</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="keywords" content="AM1ngkk" />
 	<meta name="description" content="AM1ng&#39;s Workshop">
@@ -740,181 +740,68 @@ var $main = document.querySelector('.main');
 
 
 
-
 <style>
-.dearmsdan-post {
-	webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	-o-transform: translateZ(0);
-	transform: translateZ(0);
-}
-.dearmsdan-post:hover{
-	webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	-o-transform: translateZ(0);
-	transform: translateZ(0);
-}
+	#dearmsdanPost:hover{
+   		    background-color: rgba(255, 255, 255, 0.5)!important;
+	}	
 </style>
-
-
-<style>
-@media screen and (max-width: 1024px){
-	.dearmsdan-more{    
-    opacity: 1!important;
-	}
-	.dearmsdan-more{  
-		display: contents!important;	
-	}
-	.dearmsdan-toping{
-		display: inline-block;
-		left: 10px;
-		top: 0;
-		z-index: 2;
-		color: #FFFFFF;
-		padding: 0 10px;
-		border-radius: 4px;
-		font-style: normal;
-		background-color: rgba(234, 67, 74, 0.7);
-	}
-	.dearmsdan-post:hover .dearmsdan-toping {display: inline-block!important;}
-}
-
-@media screen and (min-width: 1024px){
-	.dearmsdan-toping{
-		display: none;
-		position: fixed;
-		left: 10px;
-		top: 0;
-		z-index: 2;color: #FFFFFF;
-		clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0);
-		background-color: rgba(255, 0, 0, 0.51);    
-		background: -webkit-gradient(linear, left bottom,left top, from(transparent), color-stop(100%, rgba(255, 0, 0, 0.51)));
-    	background: gradient(linear, left bottom,left top, from(transparent), color-stop(100%, rgba(255, 0, 0, 0.51)));
-		height: 61px;
-		width: 41px;
-	}
-}
-	.dearmsdan-more{   
-	display: inline-block;
-    float: right;
-    background-color: rgba(204, 196, 196, 0.45);
-    padding: .5rem 1rem;
-    border-radius: 4px;
-    color: #919191!important;
-    text-decoration: none;
-    opacity: 0;
-    -webkit-transition: opacity 1.2s;
-    transition: opacity 1.2s;
-    will-change: opacity;
-        -moz-user-select: none; /*火狐*/
-        -webkit-user-select: none; /*webkit浏览器*/
-        -ms-user-select: none; /*IE10*/
-        -khtml-user-select: none; /*早期浏览器*/
-        -o-user-select: none; /* Opera*/
-        user-select: none;
-	}
-	.dearmsdan-post:hover .dearmsdan-more {
-		opacity: 1;
-		animation: fade-in;
-		animation-duration: 0.6s;
-		-webkit-animation: fade-in 0.6s;
-	}
-	
-	@keyframes fade-in {  
-    0% {opacity: 0;}/*初始状态 透明度为0*/  
-    40% {opacity: 0;}/*过渡状态 透明度为0*/  
-    100% {opacity: 1;}/*结束状态 透明度为1*/  
-	}  
-	@-webkit-keyframes fade-in {/*针对webkit内核*/  
-		0% {opacity: 0;}  
-		40% {opacity: 0;}  
-		100% {opacity: 1;}  
-	}  
-	.dearmsdan-post:hover .dearmsdan-toping {display: block;}
-	.dearmsdan-tags{
-	}
-	.dearmsdan-tags a{
-		color: #fff; 
-		font-size: 15px; 
-	}
-	.dearmsdan-tags a {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-	}
-	
-</style>
-
-
-<style>
-	
-@media screen and (min-width: 1024px){
-	.dearmsdan-post:hover{
-   		border: none;
-		transform: translateY(-20px);
-		-webkit-transform: translateY(-20px);
-		-moz-transform: translateY(-20px);
-		background-color: rgba(255, 255, 255, 0.3);
-	}
-	.dearmsdan-post{    
-		padding: 60px 70px!important;
-	}
-}
-	.dearmsdan-post{    
-/*   		border: 1px #b8c7ff solid;*/
-		margin: 0px;    margin-bottom: 20px;
-        background-color: rgba(240, 248, 255, 0.4);
-	}
-</style>
-
-
-
-
-
-
 <div class="dearmsdan">
-	<section class="dearmsdan-posts">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-		
-    <div class="dearmsdan-post" id="dearmsdanIndex">
-		<div class="dearmsdan-inner-content">
-		<div class="dearmsdan-inner-img">
-			<div class="dearmsdan-cover-content">
-				<a href="/2021/12/08/Blog9/">
-					<div class="dearmsdan-title"> 
-						算法中的回溯算法
-					</div>
-				</a>
-			</div>
-			
+	<div class="dearmsdan-post" id="dearmsdanPost">
+		<div class="dearmsdan-title">
+			<h1>算法中的回溯算法</h1>
 		</div>
+	  <div id="post" class="dearmsdan-post-Statistics">
+            <a>2021年12月08日</a>
+		  	<a class="post-count">99 字</a>
+		
+		
+	  </div>
+		
+		
+<div id="modal" style="display:none">
 
-			<article>
-				
+<aside id="article-toc" class="fixed-toc">
+    <div id="article-toc-inner">
+        <strong class="sidebar-title">目录</strong>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#AM1ng%E2%80%99s-Algorithm-Blog%EF%BC%81"><span class="toc-text">AM1ng’s Algorithm Blog！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E9%A2%98%E7%9B%AE%EF%BC%9A-%E6%9C%80%E5%B0%8F%E9%87%8D%E9%87%8F%E6%9C%BA%E5%99%A8%E8%AE%BE%E8%AE%A1%E9%97%AE%E9%A2%98"><span class="toc-text">实验题目： 最小重量机器设计问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E6%8F%8F%E8%BF%B0"><span class="toc-text">算法描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF%E6%8F%8F%E8%BF%B0"><span class="toc-text">思路描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%AA%E5%9B%9E%E6%BA%AF%E6%B3%95%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A"><span class="toc-text">贪回溯法心得体会</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#See-U-next-time%EF%BC%81"><span class="toc-text">See U next time！</span></a></li></ol></li></ol>
+    </div>
+</aside>
+</div>
+
+
+		
+			<a href="#modal" class="second">
+				<div class="i">
+						<i style="font-size:20px" class="DearMsDanIconFont icon-sousuo">
+						<span style="font-size:0px"><br/>目<br/>录</span>
+						</i>
+				</div>
+			</a>
+
+
+
+
+<script>
+	$(".second .i").mouseover(function(){
+  $(".second .i span").css("font-size","18px");
+});
+	$(".second .i").mouseleave(function(){
+  $(".second .i span").css("font-size","0px");
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+		<div>
+			  <article>
 				<p>回溯算法是一种选优搜索法，按选优条件向前搜索，以达到目标。简单的说是在搜索过程中寻找问题的解，当发现已不满足求解条件时，就回溯返回，尝试别的路径。</p>
 <p>当探索到某一步时，发现原先选择不是目前的最优解或不满足问题条件时，就退回一步重新选择，并减去当前步骤的节点对应的值，这种方法为回溯法</p>
 <p>回溯法解题步骤<br>    (1)针对所给问题，确定问题的解空间： 首先应明确定义问题的解空间，问题的解空间应至少包含问题的一个（最优）解。 </p>
@@ -936,452 +823,56 @@ var $main = document.querySelector('.main');
 <p>回溯法是一种选优搜索法，即探索与回溯法，又称为试探法，安选优条件向前搜索，以达到目标。<br>如果探索到某一步时，发现无法达到最优解或者无解，则退回到上一步，即回溯，直到选出最优解为止。<br>回溯过程中之前走到的位置，可以是上个选择，也可以是根据算法自定条件的位置，甚至可以是原点，但是一般不考虑原点，会出现死循环。<br>回溯算法解题的一个显著特征，是在搜索解的过程中动态的产生问题的解空间。在任何时候，算法只保存从根节点到当前扩展结点的路劲。<br>如果解空间树中从根节点到叶节点的最长路径的长度为h(n),则回溯法所需要的计算空间通常为O(h(n))。</p>
 <p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/weiyuefei/article/details/79316653?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164672720116780264072398%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164672720116780264072398&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-79316653.article_score_rank&utm_term=%E5%9B%9E%E6%BA%AF%E6%B3%95&spm=1018.2226.3001.4187">回溯法</a></p>
 <h3 id="See-U-next-time！"><a href="#See-U-next-time！" class="headerlink" title="See U next time！"></a>See U next time！</h3>
-				
-			</article>
-			<div class="dearmsdan-post-Statistics">
-				<a>2021年12月08日</a>
-				
-				
-			</div>
+			  </article>
 		</div>
-		<a href="/2021/12/08/Blog9/"><div class="dearmsdan-more">阅读更多...</div></a>
 		
-    </div>
-    
+		
+
+
+		 	
+		
+	  
 	
-    
-    
 		
-    <div class="dearmsdan-post" id="dearmsdanIndex">
-		<div class="dearmsdan-inner-content">
-		<div class="dearmsdan-inner-img">
-			<div class="dearmsdan-cover-content">
-				<a href="/2021/11/15/Blog8/">
-					<div class="dearmsdan-title"> 
-						算法中的贪心算法
-					</div>
-				</a>
-			</div>
-			
-		</div>
-
-			<article>
-				
-				<p>贪心算法是指在对问题求解时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，只做出在某种意义上的局部最优解。贪心算法不是对所有问题都能得到整体最优解，关键是贪心策略的选择，选择的贪心策略必须具备无后效性，即某个状态以前的过程不会影响以后的状态，只与当前状态有关。<br>解题的一般步骤是：<br>1.建立数学模型来描述问题；<br>2.把求解的问题分成若干个子问题；<br>3.对每一子问题求解，得到子问题的局部最优解；<br>4.把子问题的局部最优解合成原来问题的一个解。</p>
-<h2 id="AM1ng’s-Algorithm-Blog！"><a href="#AM1ng’s-Algorithm-Blog！" class="headerlink" title="AM1ng’s Algorithm Blog！"></a>AM1ng’s Algorithm Blog！</h2><h2 id="实验题目：-程序存储问题"><a href="#实验题目：-程序存储问题" class="headerlink" title="实验题目： 程序存储问题"></a>实验题目： 程序存储问题</h2><p>设有n 个程序{1,2,…, n }要存放在长度为L的磁带上。程序i存放在磁带上的长度是 li，1≤i≤n。 程序存储问题要求确定这n 个程序在磁带上的一个存储方案， 使得能够在磁带上存储尽可能多的程序。 对于给定的n个程序存放在磁带上的长度，计算磁带上最多可以存储的程序数。<br>input:第一行是2 个正整数，分别表示文件个数n和磁带的长度L。接下来的1行中，有n个正整数，表示程序存放在磁带上的长度。<br>output:输出最多可以存储的程序数。</p>
-<h3 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">    int n,l;</span><br><span class="line">    int count =0;  //计数器计算存储了几个</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;l;</span><br><span class="line">    </span><br><span class="line">    int a[n+1];</span><br><span class="line">    <span class="keyword">for</span>(int i = 0;i&lt;n;i++)</span><br><span class="line">    &#123; </span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    sort(a,a+n);//默认升序</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(int i = 0;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=l)</span><br><span class="line">        &#123;</span><br><span class="line">            l -=a[i];//l 代表总长</span><br><span class="line">            count++;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    cout&lt;&lt;<span class="string">count;</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">    return 0;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
 
 
-<h3 id="思路描述"><a href="#思路描述" class="headerlink" title="思路描述"></a>思路描述</h3><p>1.贪心算法（贪心策略）</p>
-<p>目的是要存储最多的程序，贪心算法策略为利用sort函数对程序占用量进行排序，选择最小的，从最小的开始存储，验证得到最优方案里面一定也包含从最小开始选的方案，<br>说明此策略符合最优解，贪心算法成立。</p>
-<p>2.算法解释</p>
-<p>利用总长为l，利用数组存储每一个程序占用大小，每存储一个程序，总长l减去对应存储进去程序所需占用的大小，<br>此时计数器count加一，每次循环更新剩余的l的长度，判断是否够存储下一个程序。</p>
-<p>3 复杂度分析<br>    时间复杂度：利用了sort函数对占用大小进行排序，其原理是依据快排，时间复杂度O（n²）</p>
-<pre><code>空间复杂度：一维数组O（n）
-</code></pre>
-<h3 id="贪心算法的个人体会和思考"><a href="#贪心算法的个人体会和思考" class="headerlink" title="贪心算法的个人体会和思考"></a>贪心算法的个人体会和思考</h3><p>贪心算法总是作出在当前看来最好的选择。<br>所以难想到利用初步的排序或者按照一定自己来定义的方法进行择优处理，从而达到选取最好的过程。<br>贪心算法常用于解决最大值或最小值的优化问题。贪心算法能求得最优解的问题一般具有两个重要性质：<br>贪心选择性质：问题的整体最优解可以通过一系列局部最优的选择达到。这是贪心算法可行的第一个基本要素，也是贪心算法问题和动态规划问题的主要区别。贪心算法通常自顶向下，以迭代的方式做出相继的贪心选择。<br>最优子结构性质：问题的整体最优解包含子问题的最优解。<br>贪心算法的基本要素：</p>
-<p>1.贪心选择性质。所谓贪心选择性质是指所求问题的整体最优解可以通过一系列局部最优的选择，即贪心选择来达到。这是贪心算法可行的第一个基本要素，也是贪心算法与动态规划算法的主要区别。</p>
-<p>动态规划算法通常以自底向上的方式解各子问题，而贪心算法则通常以自顶向下的方式进行，以迭代的方式作出相继的贪心选择，每作一次贪心选择就将所求问题简化为规模更小的子问题。</p>
-<p>对于一个具体问题，要确定它是否具有贪心选择性质，必须证明每一步所作的贪心选择最终导致问题的整体最优解。</p>
-<p>2.当一个问题的最优解包含其子问题的最优解时，称此问题具有最优子结构性质。问题的最优子结构性质是该问题可用动态规划算法或贪心算法求解的关键特征。</p>
-<p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/effective_coder/article/details/8736718?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164247531916780265413574%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164247531916780265413574&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-5-8736718.pc_search_insert_es_download&utm_term=%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95&spm=1018.2226.3001.4187">贪心算法</a></p>
-<h3 id="See-U-next-time！"><a href="#See-U-next-time！" class="headerlink" title="See U next time！"></a>See U next time！</h3>
-				
-			</article>
-			<div class="dearmsdan-post-Statistics">
-				<a>2021年11月15日</a>
-				
-				
-			</div>
-		</div>
-		<a href="/2021/11/15/Blog8/"><div class="dearmsdan-more">阅读更多...</div></a>
-		
-    </div>
-    
+<div class="copy">
+<i></i>
+<strong>本文作者：</strong>
 	
-    
-    
-		
-    <div class="dearmsdan-post" id="dearmsdanIndex">
-		<div class="dearmsdan-inner-content">
-		<div class="dearmsdan-inner-img">
-			<div class="dearmsdan-cover-content">
-				<a href="/2021/10/24/Blog7/">
-					<div class="dearmsdan-title"> 
-						算法中的动态规划
-					</div>
-				</a>
-			</div>
-			
-		</div>
-
-			<article>
-				
-				<p>算法导论这本书是这样介绍这个算法的，动态规划与分治方法类似，都是通过组合子问题的解来来求解原问题的。再来了解一下什么是分治方法，以及这两者之间的差别，分治方法将问题划分为互不相交的子问题，递归的求解子问题，再将它们的解组合起来，求出原问题的解。而动态规划与之相反，动态规划应用与子问题重叠的情况，即不同的子问题具有公共的子子问题（子问题的求解是递归进行的，将其划分为更小的子子问题）。<br>态规划对于每一个子子问题只求解一次，将其解保存在一个表格里面，从而无需每次求解一个子子问题时都重新计算，避免了不必要的计算工作。</p>
-<h2 id="AM1ng’s-Algorithm-Blog！"><a href="#AM1ng’s-Algorithm-Blog！" class="headerlink" title="AM1ng’s Algorithm Blog！"></a>AM1ng’s Algorithm Blog！</h2><h2 id="实验题目：单调递增最长子序列"><a href="#实验题目：单调递增最长子序列" class="headerlink" title="实验题目：单调递增最长子序列"></a>实验题目：单调递增最长子序列</h2><h3 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">void <span class="function"><span class="title">solve</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">for</span>(int i = 1; i &lt;= n; ++i)</span><br><span class="line">    F[i] = 1;</span><br><span class="line">   <span class="keyword">for</span>(int i = 1; i &lt;= n; ++i)</span><br><span class="line">   &#123;</span><br><span class="line">       <span class="keyword">for</span>(int j = 1; j &lt; i; ++j)</span><br><span class="line">       &#123;</span><br><span class="line">           <span class="keyword">if</span>(a[i] &gt; a[j] &amp;&amp; F[i] &lt; F[j] + 1)</span><br><span class="line">            F[i] = F[j] + 1;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">for</span>(int i = 1; i &lt;= n; ++i)</span><br><span class="line">    <span class="keyword">if</span>(F[i] &gt; max_)</span><br><span class="line">        max_ = F[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/FangXiaXin/article/details/80595797?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163506951716780271569457%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163506951716780271569457&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-80595797.pc_search_all_es&utm_term=%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AAO(n%5E2)%E6%97%B6%E9%97%B4%E7%9A%84%E7%AE%97%E6%B3%95%EF%BC%8C%E6%89%BE%E5%87%BA%E7%94%B1n%E4%B8%AA%E6%95%B0%E7%BB%84%E6%88%90%E7%9A%84%E5%BA%8F%E5%88%97%E7%9A%84%E6%9C%80%E9%95%BF%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97%E3%80%82&spm=1018.2226.3001.4187">单调递增最长子序列</a></p>
-<h3 id="思路描述"><a href="#思路描述" class="headerlink" title="思路描述"></a>思路描述</h3><p>1 各数组解释<br>    int a[1024]; //原数组</p>
-<pre><code>int F[1024]; //在i处的长度
-
-int n; //目标数组
-</code></pre>
-<p>2 算法思路<br>    F[i]的含义为：在“可取元素为前i”且“取第i个元素”时最长递增序列的长度。</p>
-<pre><code>列出递归关系为： F[i] = max(F[k]) + 1, 1 &lt;= k &lt;= i - 1 &amp;&amp; a[i] &gt; a[k]
-
-其实就是利用动态规划的一种思想
-
-采用遍历数组序列，不断更新递增序列的长度以至于来找到最长单调递增序列。
-</code></pre>
-<p>3 复杂度分析<br>    时间复杂度：遍历两个数组，双循环 T=O（n2）</p>
-<pre><code>空间复杂度：O（n）
-</code></pre>
-<h3 id="动态规划的个人体会和思考"><a href="#动态规划的个人体会和思考" class="headerlink" title="动态规划的个人体会和思考"></a>动态规划的个人体会和思考</h3><p>动态规划又叫做填表法，就是说动态规划就是个填表游戏。<br>1、自底向上：思想是逆向的，但也能正向解答。两者是相同的，只是求解顺序不一样。<br>2、状态转移方程：对于这个，我只能说，暴力怎么解，动态规划就怎么解。因为求解动态规划的顺序是先暴力递归——带备忘录的递归——动态规划。并且看博客多了的人会发现，其实递归的递归体就是动态规划的状态转移方程。不同的思考，得出的状态转移方程也不一样。<br>3、最优子问题：大问题分成小问题，小问题寻找最优解构成大问题的最优解。这一点不必太在意，因为求解的过程就是在求解小问题的最优解。</p>
-<p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44771588/article/details/102699265?ops_request_misc=&request_id=&biz_id=102&utm_term=%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%BF%83%E5%BE%97&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-8-102699265.pc_search_all_es&spm=1018.2226.3001.4187">动态规划例题</a></p>
-<h3 id="See-U-next-time！"><a href="#See-U-next-time！" class="headerlink" title="See U next time！"></a>See U next time！</h3>
-				
-			</article>
-			<div class="dearmsdan-post-Statistics">
-				<a>2021年10月24日</a>
-				
-				
-			</div>
-		</div>
-		<a href="/2021/10/24/Blog7/"><div class="dearmsdan-more">阅读更多...</div></a>
-		
-    </div>
-    
+	 
+			AM1ngkk<br>
+        
 	
-    
-    
-		
-    <div class="dearmsdan-post" id="dearmsdanIndex">
-		<div class="dearmsdan-inner-content">
-		<div class="dearmsdan-inner-img">
-			<div class="dearmsdan-cover-content">
-				<a href="/2021/10/03/Blog6/">
-					<div class="dearmsdan-title"> 
-						算法中分治法实验总结
-					</div>
-				</a>
-			</div>
-			
-		</div>
-
-			<article>
-				
-				<p>在计算机科学中，分治法是一种很重要的算法。字面上的解释是“分而治之”，就是把一个复杂的问题分成两个或更多的相同或相似的子问题，再把子问题分成更小的子问题……直到最后子问题可以简单的直接求解，原问题的解即子问题的解的合并。</p>
-<p>任何一个可以用计算机求解的问题所需的计算时间都与其规模有关。问题的规模越小，越容易直接求解，解题所需的计算时间也越少。例如，对于n个元素的排序问题，当n=1时，不需任何计算。n=2时，只要作一次比较即可排好序。n=3时只要作3次比较即可，…。而当n较大时，问题就不那么容易处理了。要想直接解决一个规模较大的问题，有时是相当困难的。</p>
-<h2 id="AM1ng’s-Algorithm-Blog！"><a href="#AM1ng’s-Algorithm-Blog！" class="headerlink" title="AM1ng’s Algorithm Blog！"></a>AM1ng’s Algorithm Blog！</h2><h2 id="实验题目：maximum-number-in-a-unimodal-array（单峰数组中的最大数目）"><a href="#实验题目：maximum-number-in-a-unimodal-array（单峰数组中的最大数目）" class="headerlink" title="实验题目：maximum number in a unimodal array（单峰数组中的最大数目）"></a>实验题目：maximum number in a unimodal array（单峰数组中的最大数目）</h2><h3 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">int biosearch( int a[],int left,int right)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(left&lt;=right)//满足二分法的条件，同时可以用于判断二分法何时停止</span><br><span class="line">    &#123;</span><br><span class="line">        int max=(left+right)/2; //二分法循环后缩小范围</span><br><span class="line">        <span class="keyword">if</span>(a[max]&gt;a[max-1]&amp;&amp;a[max]&gt;a[max+1])//max大于左右，即为峰值，符合目的</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">return</span> max;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(a[max]&gt;a[max+1]&amp;&amp;a[max]&lt;a[max-1])//max大于右边小于左边 最大值在right左边 从右往左缩小范围 更新右指针</span><br><span class="line">        &#123;</span><br><span class="line">        right=max-1;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        left = max+1;//同上理 最大值在left右边 从左往右缩小范围 更新左指针</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/jbj6568839z/article/details/111935019?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163326583416780255297694%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163326583416780255297694&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-111935019.pc_search_all_es&utm_term=%E4%BA%8C%E5%88%86%E6%B3%95&spm=1018.2226.3001.4187">二分法</a></p>
-<h3 id="分治法的个人体会和思考"><a href="#分治法的个人体会和思考" class="headerlink" title="分治法的个人体会和思考"></a>分治法的个人体会和思考</h3><p>分治法解释：面上的解释是“分而治之”，就是把一个复杂的问题分成两个或更多的相同或相似的子问题，再把子问题分成更小的子问题……直到最后子问题可以简单的直接求解，原问题的解即子问题的解的合并。</p>
-<p>基本步骤：分解、求解子问题、合并。</p>
-<p>思考：分治法很直观明了的让我们作为计算机系的学生去体会到了算法的意义和目的，联想到数据结构课上学的快排，二分法，堆排等算法，不难理解分治法其实早已穿插在以前的学习中。但是总的目的都是要对算法进行优化，寻找最优解，过程中要进行复杂度分析，不一定所有情况都必须用分治法或者分治法里是否还需要考虑最优解。</p>
-<p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41956860/article/details/103873725?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163326488316780262540162%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163326488316780262540162&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-2-103873725.pc_search_all_es&utm_term=%E5%88%86%E6%B2%BB%E6%B3%95&spm=1018.2226.3001.4187">分治法</a></p>
-<h3 id="See-U-next-time！"><a href="#See-U-next-time！" class="headerlink" title="See U next time！"></a>See U next time！</h3>
-				
-			</article>
-			<div class="dearmsdan-post-Statistics">
-				<a>2021年10月03日</a>
-				
-				
-			</div>
-		</div>
-		<a href="/2021/10/03/Blog6/"><div class="dearmsdan-more">阅读更多...</div></a>
-		
-    </div>
-    
-	
-    
-    
-		
-    <div class="dearmsdan-post" id="dearmsdanIndex">
-		<div class="dearmsdan-inner-content">
-		<div class="dearmsdan-inner-img">
-			<div class="dearmsdan-cover-content">
-				<a href="/2021/07/17/BLOG5/">
-					<div class="dearmsdan-title"> 
-						Flying Birds&#39; blog 5th
-					</div>
-				</a>
-			</div>
-			
-		</div>
-
-			<article>
-				
-				<p>关于实践周的第一个项目选择了制作Flying Birds小游戏，预备知识包括面向对象的封装，swing和awt包，Math类，事件监听器，多线程。<br>关于一些具体参数为何设置实际上应该是和所给素材图片的大小有关，其实也可以利用相关get函数读取相关参数输出后，就可以知道。<br>以此造成的影响包括图片设置的位置x，y的设定以及小鸟初始位置的设定，以及窗口大小设定。<br>总的来说，关于设计一个完整项目，最重要的是了解类的属性关系以及类的相关方法。<br>回顾总设计流程如下<br>1.绘制面板，放入背景图。<br>2.设计地面、柱子类完成移动的效果(移动方法实现)。<br>3.设计小鸟，完成飞行轨迹、与柱子是否碰撞的方法等。<br>4.设计游戏类，完成游戏类界面的绘制。<br>5.设计游戏开始的方法与流程。<br>6.增加鼠标监听器完成对小鸟飞行及游戏运行的控制。<br>具体知识点包括<br>变量<br>1.分支语句<br>2.循环语句<br>3.面向对象<br>4.异常处理<br>5.Random随机数<br>6.StringBuffer字符串操作<br>7.IO操作<br>8.多线程<br>9.swing组件和awt组件<br>10.Math类函数调用<br>相关知识点是在边学习边使用，需要更加理解并灵活运使用</p>
-<h2 id="Flying-Birds总结回顾要点"><a href="#Flying-Birds总结回顾要点" class="headerlink" title="Flying Birds总结回顾要点"></a>Flying Birds总结回顾要点</h2><h3 id="动画参数中重要参数循环中的i"><a href="#动画参数中重要参数循环中的i" class="headerlink" title="动画参数中重要参数循环中的i"></a>动画参数中重要参数循环中的i</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//初始化动画帧参数</span><br><span class="line">        images=new Image[8];</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(int i=0;i&lt;8;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            images[i]=new ImageIcon(<span class="string">&quot;source/&quot;</span>+i+<span class="string">&quot;.png&quot;</span>).getImage();</span><br><span class="line">        &#125;</span><br><span class="line">        index=0;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
-<p>由于在source的文件里表示小鸟的图片有8张i是从0开始对应图片source0.jpg，所以i的循环中从0到7满足就是对souce里面source0.jpg到source7.jpg的遍历。</p>
-<h3 id="此处弧度作用"><a href="#此处弧度作用" class="headerlink" title="此处弧度作用"></a>此处弧度作用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public boolean hit(Ground ground)</span><br><span class="line">    &#123;</span><br><span class="line">        boolean hit =y+size/2&gt;ground.y;</span><br><span class="line">        <span class="keyword">if</span>(hit)</span><br><span class="line">        &#123;</span><br><span class="line">            y=ground.y-size/2;</span><br><span class="line">            alpha=Math.PI/2;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> hit;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
-<p>判断条件中判断到撞击地面后， alpha=Math.PI/2实际上将小鸟的弧度重置为Math.PI/2，表现在游戏中gameover的时候小鸟摔了个底朝天。</p>
-<p>More info: <a target="_blank" rel="noopener" href="https://imgtu.com/i/Wlfoon">小鸟被撞翻啦</a></p>
-<h3 id="repaint-方法"><a href="#repaint-方法" class="headerlink" title="repaint()方法"></a>repaint()方法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//休眠1000/60毫秒</span><br><span class="line">            Thread.sleep(1000/60);</span><br><span class="line">            repaint();</span><br></pre></td></tr></table></figure>
-<p>repaint()这个方法是一个具有刷新页面效果的方法，如果你要页面进行重画就可以调用．一般都是在ＡＷＴ的图形绘制当中调用的到<br>工作原理如下：<br> repaint()方法<br>              |<br>              |<br>             V<br>      ＡＷＴ线程－－－＞paint()方法－－＞图形绘制<br>　　　｜<br>　　　｜<br>　　　Ｖ<br>      update()方法－－－＞paint()方法－－图形绘制</p>
-<h3 id="主要需要判断出现的两大界面"><a href="#主要需要判断出现的两大界面" class="headerlink" title="主要需要判断出现的两大界面"></a>主要需要判断出现的两大界面</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">int state;//游戏状态</span><br><span class="line">    //状态常量</span><br><span class="line">    public static final int START=0;//开始</span><br><span class="line">    public static final int RUNNING=1;//运行</span><br><span class="line">    public static final int GAME_OVER=2;//结束</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            public void mousePressed(MouseEvent e)</span><br><span class="line">            &#123;</span><br><span class="line">                try &#123;</span><br><span class="line">                    switch(state) &#123;</span><br><span class="line">                    <span class="keyword">case</span> START:</span><br><span class="line">                        //在开始前按下鼠标转为运行状态</span><br><span class="line">                        state=RUNNING;</span><br><span class="line">                        <span class="built_in">break</span>;</span><br><span class="line">                    <span class="keyword">case</span> RUNNING:</span><br><span class="line">                        //在运行状态，按下鼠标小鸟向上飞行</span><br><span class="line">                        bird.flappy();</span><br><span class="line">                        <span class="built_in">break</span>;</span><br><span class="line">                    <span class="keyword">case</span> GAME_OVER:</span><br><span class="line">                        //在结束状态，按下鼠标重置数据变为开始</span><br><span class="line">                        column1=new Column(1);</span><br><span class="line">                        column2=new Column(2);</span><br><span class="line">                        bird=new Bird();</span><br><span class="line">                        score=0;</span><br><span class="line">                        state=START;</span><br><span class="line">                        <span class="built_in">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">      //绘制开始和结束界面</span><br><span class="line">        switch(state)</span><br><span class="line">        &#123;</span><br><span class="line">        <span class="keyword">case</span> START:</span><br><span class="line">            g.drawImage(startImage, 0, 0, null);</span><br><span class="line">            <span class="built_in">break</span>;</span><br><span class="line">        <span class="keyword">case</span> GAME_OVER:</span><br><span class="line">            g.drawImage(overImage, 0, 0, null);</span><br><span class="line">            <span class="built_in">break</span>；</span><br><span class="line">        &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>通过Bird类里面的碰撞判断再来判断Birdgame类里面的state//状态常量，通过状态常量在switch语句里面的条件判断情况后，绘制<br>不同情况下所应该显示的对应图片。</p>
-<h3 id="JFrame的使用到的代码"><a href="#JFrame的使用到的代码" class="headerlink" title="JFrame的使用到的代码"></a>JFrame的使用到的代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line">public static void main(String[] args) throws Exception</span><br><span class="line">&#123;</span><br><span class="line">  </span><br><span class="line">  JFrame frame=new JFrame();</span><br><span class="line">  BirdGame game=new BirdGame();</span><br><span class="line">  frame.add(game);</span><br><span class="line">  frame.setSize(440,670);</span><br><span class="line">  frame.setLocationRelativeTo(null);//设置窗口相对于指定组件的位置。如果组件当前未显示或者 为 null，则此窗口将置于屏幕的中央</span><br><span class="line">  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//如果在代码里没加这个方法，那么在点击框架的”叉叉“退出框架后，程序仍然没有退出，只是JFrame被关闭了。</span><br><span class="line">  frame.setVisible(<span class="literal">true</span>);</span><br><span class="line">  game.action();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>JFrame是最底层，JPanel是置于其面上，同一个界面只有一个JFrame，一个JFrame可以放多个JPanel。<br>JFrame 用来设计类似于 Windows 系统中窗口形式的界面。JFrame 是 Swing 组件的顶层容器，该类继承了 AWT 的 Frame 类，支持 Swing 体系结构的高级 GUI 属性。<br>JPanel 是一种中间层容器，它能容纳组件并将组件组合在一起，但它本身必须添加到其他容器中使用。</p>
-<h3 id="JFrame常见使用方法"><a href="#JFrame常见使用方法" class="headerlink" title="JFrame常见使用方法"></a>JFrame常见使用方法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">JFrame jf = new JFrame(<span class="string">&quot;我是标题鸭！！！&quot;</span>);//创建一个JFrame对象</span><br><span class="line">jf.setTitle(<span class="string">&quot;我是标题鸭！！!&quot;</span>);//标题的设置</span><br><span class="line">jf.setSize(20,10)//设置了一个长为20，高为10的框图。</span><br><span class="line">jf.setBounds(1,2,20,10)//设置一个左上角顶点在（1，2），长为20，宽为10的窗体。</span><br><span class="line">jf.setLocation(1，2)//设置一个左上角顶点在（1，2）的窗体。</span><br><span class="line">jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//设置同步开关</span><br><span class="line">jf.setVisible(<span class="literal">true</span>);//设置窗体可见</span><br></pre></td></tr></table></figure>
-<h3 id="JPanel常见使用方法"><a href="#JPanel常见使用方法" class="headerlink" title="JPanel常见使用方法"></a>JPanel常见使用方法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//构造方法</span><br><span class="line">JPanel()：使用默认的布局管理器创建新面板，默认的布局管理器为 FlowLayout。</span><br><span class="line">JPanel(LayoutManagerLayout layout)：创建指定布局管理器的 JPanel 对象。</span><br><span class="line">//常见函数</span><br><span class="line">Component add(Component comp)   将指定的组件追加到此容器的尾部</span><br><span class="line">void remove(Component comp) 从容器中移除指定的组件</span><br><span class="line">void setFont(Font f)    设置容器的字体</span><br><span class="line">void setLayout(LayoutManager mgr)   设置容器的布局管理器</span><br><span class="line">void setBackground(Color c) 设置组件的背景色</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_27870421/article/details/88147375?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162651207216780255238618%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162651207216780255238618&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-3-88147375.pc_search_result_control_group&utm_term=jframe%E5%92%8Cjpanel&spm=1018.2226.3001.4187">JPanel和JFrame的使用方法</a></p>
-<h3 id="Welcome-back-AM1ng"><a href="#Welcome-back-AM1ng" class="headerlink" title="Welcome back AM1ng!"></a>Welcome back AM1ng!</h3>
-				
-			</article>
-			<div class="dearmsdan-post-Statistics">
-				<a>2021年07月17日</a>
-				
-				
-			</div>
-		</div>
-		<a href="/2021/07/17/BLOG5/"><div class="dearmsdan-more">阅读更多...</div></a>
-		
-    </div>
-    
-	
-    
-    
-		
-    <div class="dearmsdan-post" id="dearmsdanIndex">
-		<div class="dearmsdan-inner-content">
-		<div class="dearmsdan-inner-img">
-			<div class="dearmsdan-cover-content">
-				<a href="/2021/07/17/blog4/">
-					<div class="dearmsdan-title"> 
-						Flying Birds&#39; blog 4th
-					</div>
-				</a>
-			</div>
-			
-		</div>
-
-			<article>
-				
-				<p>关于实践周的第一个项目选择了制作Flying Birds小游戏。接下来是地面类和柱子类详细参数的设置。</p>
-<h3 id="地面类初始化"><a href="#地面类初始化" class="headerlink" title="地面类初始化"></a>地面类初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public Ground() throws Exception</span><br><span class="line">    &#123;</span><br><span class="line">        image =new ImageIcon(<span class="string">&quot;source/ground.png&quot;</span>).getImage();//原图片</span><br><span class="line">        width=image.getWidth(null);//使用 img.getWidth(null); 图片加载到内存中，可获图片真实宽度</span><br><span class="line">        height=image.getHeight(null);//使用 img.getHeight(null); 图片加载到内存中，可获图片真实高度</span><br><span class="line">        x=0;</span><br><span class="line">        y=500;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>设计Gound类里默认读取图片资源中的ground的图片利用image.getWidth(null) image.getHeight(null)读取图片的高宽。<br>x y来控制图片放置的位置。</p>
-<h3 id="Ground类左移"><a href="#Ground类左移" class="headerlink" title="Ground类左移"></a>Ground类左移</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//左移</span><br><span class="line">    public void <span class="function"><span class="title">step</span></span>()</span><br><span class="line">    &#123;</span><br><span class="line">        x-=4;</span><br><span class="line">        <span class="keyword">if</span>(x&lt;=-109)</span><br><span class="line">        &#123;</span><br><span class="line">            x=0;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>同样名为step类意味小鸟移动其实是用地面的图像左移的动画来实现的。</p>
-<h3 id="柱子类初始化"><a href="#柱子类初始化" class="headerlink" title="柱子类初始化"></a>柱子类初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">public Column(int n) throws Exception</span><br><span class="line">    &#123;</span><br><span class="line">        image=new ImageIcon(<span class="string">&quot;source/column.png&quot;</span>).getImage();</span><br><span class="line">        width=image.getWidth(null);</span><br><span class="line">        height=image.getHeight(null);</span><br><span class="line">        gap=144;</span><br><span class="line">        distance=245;</span><br><span class="line">        x=550+(n-1)*distance;</span><br><span class="line">        y=random.nextInt(218)+132;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>同理可以默认读取图片资源中的clolumn的图片利用image.getWidth(null) image.getHeight(null)读取图片的高宽。<br>利用random类使游戏过程中柱子不断刷新后的纵坐标不同，所以柱子出现的高矮就会不同甚至没有上柱子。<br>gap是柱子之间缝隙（上下），由于贴图原因实际上gap应该为定制，如果缩小gap可能在间隙也会发生碰撞，如果扩大gap虽然确实可以增加通过的间隙，但是部分<br>间隙和柱子重叠，显示的是鸟经过了柱子但是没有发生碰撞。<br>由于柱子类出现X可以有distance控制，所以改变distance实际上是可以改变柱子出现的间隔距离（左右）。可以通过此处来改变游戏难度。</p>
-<h3 id="柱子类移动"><a href="#柱子类移动" class="headerlink" title="柱子类移动"></a>柱子类移动</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public void <span class="function"><span class="title">step</span></span>()</span><br><span class="line">    &#123;</span><br><span class="line">        x-=4;</span><br><span class="line">        <span class="keyword">if</span>(x&lt;= -width/2)</span><br><span class="line">        &#123;</span><br><span class="line">            x=distance*2-width/2;</span><br><span class="line">            y=random.nextInt(218);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>柱子随地面按step函数移动。</p>
-<h3 id="Welcome-back-AM1ng"><a href="#Welcome-back-AM1ng" class="headerlink" title="Welcome back AM1ng!"></a>Welcome back AM1ng!</h3>
-				
-			</article>
-			<div class="dearmsdan-post-Statistics">
-				<a>2021年07月17日</a>
-				
-				
-			</div>
-		</div>
-		<a href="/2021/07/17/blog4/"><div class="dearmsdan-more">阅读更多...</div></a>
-		
-    </div>
-    
-	
-    
-    
-		
-    <div class="dearmsdan-post" id="dearmsdanIndex">
-		<div class="dearmsdan-inner-content">
-		<div class="dearmsdan-inner-img">
-			<div class="dearmsdan-cover-content">
-				<a href="/2021/07/16/Blog3/">
-					<div class="dearmsdan-title"> 
-						Flying Birds&#39; blog 3rd
-					</div>
-				</a>
-			</div>
-			
-		</div>
-
-			<article>
-				
-				<h3 id="Bird类思路要点"><a href="#Bird类思路要点" class="headerlink" title="Bird类思路要点"></a>Bird类思路要点</h3><p>关于实践周的第一个项目选择了制作Flying Birds小游戏，此小游戏的易上手之处其实还在于通过几帧的小鸟图片来代表小鸟的运动形态。<br>飞行动作（变化一帧）依靠以图片类型构成的数组内重复调用小鸟状态的图片来显示。<br>移动一步需要依靠计算上跑位移、计算鸟的坐标、计算下次移动速度、计算倾角（反正切函数），向上飞行时按照惯性需要重置速度。<br>其中设计小鸟的另外两个关键函数在于判断小鸟是否碰撞到地面或者检测小鸟是否撞到柱子，此为游戏规则。</p>
-<h3 id="Bird动画原理"><a href="#Bird动画原理" class="headerlink" title="Bird动画原理"></a>Bird动画原理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Image[] images;//一组图片记录小鸟动画帧（images类数组的一组照片，Source里面的小鸟的不同照片完成小鸟的动作动画）</span><br><span class="line">int index;//帧数下标</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">//初始化动画帧参数</span><br><span class="line"> images=new Image[8];</span><br><span class="line">        </span><br><span class="line"><span class="keyword">for</span>(int i=0;i&lt;8;i++)</span><br><span class="line">&#123;</span><br><span class="line">  images[i]=new ImageIcon(<span class="string">&quot;source/&quot;</span>+i+<span class="string">&quot;.png&quot;</span>).getImage();</span><br><span class="line">   &#125;</span><br><span class="line"> index=0;//利用<span class="built_in">source</span>后面i++来访问souce里面的Bird照片，所以照片存储摆放会有影响</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>首先有一个Souce文件里面需要收集小鸟多个状态的图片，在此次项目中放置在Source的文件包里面，关于小鸟的每一帧形态的图片为该包内的0-7个文件。<br>此处文件顺序对动作会有影响，上述代码附带解释。</p>
-<h3 id="Bird中step：移动一步"><a href="#Bird中step：移动一步" class="headerlink" title="Bird中step：移动一步"></a>Bird中step：移动一步</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public void <span class="function"><span class="title">step</span></span>()</span><br><span class="line">  &#123;</span><br><span class="line">    double v0=speed;</span><br><span class="line">    //计算上跑位移</span><br><span class="line">    s=v0*t+g*t*t/2;</span><br><span class="line">    //计算鸟的坐标</span><br><span class="line">    y=y-(int)s;</span><br><span class="line">    //计算下次移动速度</span><br><span class="line">    double v=v0-g*t;</span><br><span class="line">    speed =v;</span><br><span class="line">    //计算倾角（反正切函数）</span><br><span class="line">    alpha=Math.atan(s/8);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<p>移动中根据间隔时间需要计算鸟出现的坐标以及倾斜角展示鸟下落或者上飞的一个过程。</p>
-<h3 id="Bird类碰撞判断（游戏不碰撞的规则）"><a href="#Bird类碰撞判断（游戏不碰撞的规则）" class="headerlink" title="Bird类碰撞判断（游戏不碰撞的规则）"></a>Bird类碰撞判断（游戏不碰撞的规则）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  //检测小鸟是否碰撞到地面</span><br><span class="line">  public boolean hit(Ground ground)</span><br><span class="line">  &#123;</span><br><span class="line">    boolean hit =y+size/2&gt;ground.y;</span><br><span class="line">    <span class="keyword">if</span>(hit)</span><br><span class="line">    &#123;</span><br><span class="line">      y=ground.y-size/2;</span><br><span class="line">      alpha=Math.PI/2;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> hit;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  //检测小鸟是否撞到柱子</span><br><span class="line">  public boolean hit(Column column)</span><br><span class="line">  &#123;</span><br><span class="line">    //检测是否在柱子范围内</span><br><span class="line">    <span class="keyword">if</span>(x&gt;column.x-column.width/2-size/2&amp;&amp;x&lt;column.x+column.width/2+size/2)</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">if</span>(y&gt;column.y-column.gap/2+size/2&amp;&amp;y&lt;column.y+column.gap/2-size/2) <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">      <span class="built_in">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>hit类用boolean类型定义返回值可以选用0或1方便之后的判断是否碰撞（即0或1）<br>考虑碰撞的两个需要同时满足的因素：一是小鸟是否会从侧面撞到柱子所以调用到column.width 二是在满足一的条件下小鸟坐标是否位于间隙（gap）坐标内</p>
-<h3 id="Bird起飞"><a href="#Bird起飞" class="headerlink" title="Bird起飞"></a>Bird起飞</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//向上飞行</span><br><span class="line">  public void <span class="function"><span class="title">flappy</span></span>()</span><br><span class="line">  &#123;</span><br><span class="line">    //重置速度</span><br><span class="line">    speed=v0;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<p>对鼠标左键进行监听，当点击鼠标左键时，小鸟会获得一个向上的速度，当松开鼠标左键的时候，小鸟就会坠落。</p>
-<h3 id="Welcome-back-AM1ng"><a href="#Welcome-back-AM1ng" class="headerlink" title="Welcome back AM1ng!"></a>Welcome back AM1ng!</h3>
-				
-			</article>
-			<div class="dearmsdan-post-Statistics">
-				<a>2021年07月16日</a>
-				
-				
-			</div>
-		</div>
-		<a href="/2021/07/16/Blog3/"><div class="dearmsdan-more">阅读更多...</div></a>
-		
-    </div>
-    
-	
-    
-    
-		
-    <div class="dearmsdan-post" id="dearmsdanIndex">
-		<div class="dearmsdan-inner-content">
-		<div class="dearmsdan-inner-img">
-			<div class="dearmsdan-cover-content">
-				<a href="/2021/07/13/blog2ed/">
-					<div class="dearmsdan-title"> 
-						Flying Birds&#39; blog 2ed
-					</div>
-				</a>
-			</div>
-			
-		</div>
-
-			<article>
-				
-				<h3 id="Birdgame类"><a href="#Birdgame类" class="headerlink" title="Birdgame类"></a>Birdgame类</h3><p>关于实践周的第一个项目选择了制作Flying Birds小游戏，首先会考虑到最直观的界面设计。<br>其中主要运用swing和awt包：图形界面工具，绘制出游戏场景。<br>主要设计对象包括游戏开始界面，游戏分数统计,游戏结束界面。</p>
-<h3 id="整个Birdgame类继承JPanel"><a href="#整个Birdgame类继承JPanel" class="headerlink" title="整个Birdgame类继承JPanel"></a>整个Birdgame类继承JPanel</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public class BirdGame extends JPanel &#123;</span><br><span class="line">  ...</span><br><span class="line">  ...</span><br><span class="line"> &#125;</span><br><span class="line">JPanel中常用方法</span><br><span class="line">void add(Component):添加组件。</span><br><span class="line">void add(Component,int):添加组件至索引指定位置。</span><br><span class="line">void add(Component,Object):按照指定布局限制添加组件。</span><br><span class="line">void add(Component,Object,int):按照指定布局管理器限制添加组件到指定位置。</span><br><span class="line">void remove(Component):移除组件。</span><br><span class="line">void remove(int):移除指定位置的组件。</span><br><span class="line">void removeAll():移除所有组件。</span><br><span class="line">void paintComponent(Graphics):绘制组件。``</span><br><span class="line">void repaint():重新绘制。</span><br><span class="line">void setPreferredSize(Dimension):设置组件尺寸。</span><br><span class="line">Dimension getPreferredSize():获取最佳尺寸。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>组件是构成应用程序界面的基本元素，按钮、文本框、进度条等，都是组件。可视化组件又可以分为容器组件和非容器组件，可以在JPanel中放置按钮、文本框等非容器组件，甚至可以在JPanel中再放置若干个JPanel组件，顶层容器也是容器组件，每一个窗口应用程序中有且只能有一个顶层容器组件。<br>经常使用JPanel先创建一个面板，在向这个面板添加组件，然后把这个面板添加到其他容器中。<br>JPanel面板的默认布局是FlowLayout布局**<br>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_33860226/article/details/51489786?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162650064416780357254084%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162650064416780357254084&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-51489786.pc_search_result_control_group&utm_term=JPanel&spm=1018.2226.3001.4187">JFrame,JPanel,JLabel详解</a></p>
-<h3 id="Graphics2D类基本使用"><a href="#Graphics2D类基本使用" class="headerlink" title="Graphics2D类基本使用"></a>Graphics2D类基本使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//绘制小鸟</span><br><span class="line">    Graphics2D g2=(Graphics2D) g;</span><br><span class="line">    g2.rotate(-bird.alpha,bird.x,bird.y);//rotate(double arc,double x, double y)：图形以点(x,y)为轴点，旋转arc弧度。</span><br><span class="line">    g2.rotate(bird.alpha,bird.x,bird.y);//rotate(double arc,double x, double y)：图形以点(x,y)为轴点，旋转arc弧度。</span><br></pre></td></tr></table></figure>
-<p>Java语言在Graphics类提供绘制各种基本的几何图形的基础上,扩展Graphics类提供一个Graphics2D类,它拥用更强大的二维图形处理能力,提供、坐标转换、颜色管理以及文字布局等更精确的控制。<br>Graphics2D定义了几种方法，用于添加或改变图形的状态属性。可以通过设定和修改状态属性，指定画笔宽度和画笔的连接方式；设定平移、旋转、缩放或修剪变换图形；以及设定填充图形的颜色和图案等。图形状态属性用特定的对象存储。<br>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_44132240/article/details/113330403?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162650304316780264029320%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162650304316780264029320&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-113330403.pc_search_result_control_group&utm_term=Graphics2D&spm=1018.2226.3001.4187">Graphics2D类基本使用</a></p>
-<h3 id="与鼠标互动"><a href="#与鼠标互动" class="headerlink" title="与鼠标互动"></a>与鼠标互动</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">不断重复和绘制</span><br><span class="line">  MouseListener l=new <span class="function"><span class="title">MouseAdapter</span></span>()</span><br><span class="line">  &#123;</span><br><span class="line">    public void mousePressed(MouseEvent e)</span><br><span class="line">    &#123;</span><br><span class="line">      try &#123;</span><br><span class="line">        switch(state) &#123;</span><br><span class="line">        <span class="keyword">case</span> START:</span><br><span class="line">          //在开始前按下鼠标转为运行状态</span><br><span class="line">          state=RUNNING;</span><br><span class="line">          <span class="built_in">break</span>;</span><br><span class="line">        <span class="keyword">case</span> RUNNING:</span><br><span class="line">          //在运行状态，按下鼠标小鸟向上飞行</span><br><span class="line">          bird.flappy();</span><br><span class="line">          <span class="built_in">break</span>;</span><br><span class="line">        <span class="keyword">case</span> GAME_OVER:</span><br><span class="line">          //在结束状态，按下鼠标重置数据变为开始</span><br><span class="line">          column1=new Column(1);</span><br><span class="line">          column2=new Column(2);</span><br><span class="line">          bird=new Bird();</span><br><span class="line">          score=0;</span><br><span class="line">          state=START;</span><br><span class="line">          <span class="built_in">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      catch (Exception ex)</span><br><span class="line">      &#123;</span><br><span class="line">        ex.printStackTrace();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">  &#125;;</span><br><span class="line">  addMouseListener(l);</span><br></pre></td></tr></table></figure>
-<p>java中 addMouseListener（）方法用于接收组件上“感兴趣”的鼠标事件（按下、释放、单击、进入或离开）的侦听器接口。（要跟踪鼠标移动和鼠标拖动，请使用 MouseMotionListener。）<br>MouseListener与MouseAdapter的区别在于一个是类，一个是接口。<br>适配器已经实现了相应的接口，例如MouseAdapter类实现了MouseListener接口，因此可以使用MouseAdapter的子类创建的对象做监视器，只需重写需要的接口方法即可。</p>
-<h3 id="启动方法"><a href="#启动方法" class="headerlink" title="启动方法"></a>启动方法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public static void main(String[] args) throws Exception</span><br><span class="line">&#123;</span><br><span class="line">  </span><br><span class="line">  JFrame frame=new JFrame();</span><br><span class="line">  BirdGame game=new BirdGame();</span><br><span class="line">  frame.add(game);</span><br><span class="line">  frame.setSize(440,670);</span><br><span class="line">  frame.setLocationRelativeTo(null);//设置窗口相对于指定组件的位置。如果组件当前未显示或者 为 null，则此窗口将置于屏幕的中央</span><br><span class="line">  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//如果在代码里没加这个方法，那么在点击框架的”叉叉“退出框架后，程序仍然没有退出，只是JFrame被关闭了。</span><br><span class="line">  frame.setVisible(<span class="literal">true</span>);</span><br><span class="line">  game.action();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>关于Java的setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE) 这个方法是JFrame类的一个方法，EXIT_ON_CLOSE是JFrame的一个静态常量。<br>该方法的翻译大概是“设置默认的关闭操作，参数”在关闭动作时退出“。</p>
-<h3 id="Welcome-back-AM1ng"><a href="#Welcome-back-AM1ng" class="headerlink" title="Welcome back AM1ng!"></a>Welcome back AM1ng!</h3>
-				
-			</article>
-			<div class="dearmsdan-post-Statistics">
-				<a>2021年07月13日</a>
-				
-				
-			</div>
-		</div>
-		<a href="/2021/07/13/blog2ed/"><div class="dearmsdan-more">阅读更多...</div></a>
-		
-    </div>
-    
-	
-    
-    
-		
-    <div class="dearmsdan-post" id="dearmsdanIndex">
-		<div class="dearmsdan-inner-content">
-		<div class="dearmsdan-inner-img">
-			<div class="dearmsdan-cover-content">
-				<a href="/404.html">
-					<div class="dearmsdan-title"> 
-						Oh&gt;..&lt; 无法访问!
-					</div>
-				</a>
-			</div>
-			
-		</div>
-
-			<article>
-				
-				<style>
-    #no{
-    position: relative;
-        top: 30%;
-        left: 50%;
-        -webkit-transform: translate(-50%, 32%);
-        -moz-transform: translate(-50%, 32%);
-        -ms-transform: translate(-50%, 32%);
-        -o-transform: translate(-50%, 32%);
-        transform: translate(-50%, 32%);
-        font-size: 24px;
-    line-height: 72px;
-    margin-bottom: 36px;
-    white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-</style>
-<div id="no">
-    404 Oh>..<  我找不到回家的路了
-</div>
-				
-			</article>
-			<div class="dearmsdan-post-Statistics">
-				<a>2021年07月12日</a>
-				
-				
-			</div>
-		</div>
-		<a href="/404.html"><div class="dearmsdan-more">阅读更多...</div></a>
-		
-    </div>
-    
-	
-    
-    
-		
-    <div class="dearmsdan-post" id="dearmsdanIndex">
-		<div class="dearmsdan-inner-content">
-		<div class="dearmsdan-inner-img">
-			<div class="dearmsdan-cover-content">
-				<a href="/2021/07/12/BLOG1/">
-					<div class="dearmsdan-title"> 
-						Flying Birds&#39; blog 1st
-					</div>
-				</a>
-			</div>
-			
-		</div>
-
-			<article>
-				
-				<p>关于实践周的第一个项目选择了制作Flying Birds小游戏，预备知识包括面向对象的封装，swing和awt包，Math类，事件监听器，多线程。</p>
-<h2 id="新的需要了解的包"><a href="#新的需要了解的包" class="headerlink" title="新的需要了解的包"></a>新的需要了解的包</h2><h3 id="AWT"><a href="#AWT" class="headerlink" title="AWT"></a>AWT</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import java.awt.*;</span><br></pre></td></tr></table></figure>
-<p>AWT(Abstract Window Toolkit)，中文译为抽象窗口工具包，是Java提供的用来建立和设置Java的 图形用户界面 的基本工具。<br>AWT由Java中的java.awt包提供，里面包含了许多可用来建立与平台无关的图形用户界面(GUI)的类，这些类又被称为组件( component s)。</p>
-<p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42889476/article/details/88858337?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162591091416780357230376%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162591091416780357230376&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-88858337.first_rank_v2_pc_rank_v29_1&utm_term=AWT&spm=1018.2226.3001.4187">AWT</a></p>
-<h3 id="Swing"><a href="#Swing" class="headerlink" title="Swing"></a>Swing</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import javax.swing.*;</span><br></pre></td></tr></table></figure>
-<p>Swing 包含了构建图形界面（GUI）的各种组件，如: 窗口、标签、按钮、文本框等。<br>Swing 提供了许多比 AWT 更好的屏幕显示元素，使用纯 Java 实现，能够更好的兼容跨平台运行。<br>为了和AWT组件区别，Swing组件在javax.swing.包下，类名均以 J 开头，例如: JFrame、JLabel、JButton等.</p>
-<p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39651356/article/details/103352153?ops_request_misc=&request_id=&biz_id=102&utm_term=Swing&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-.first_rank_v2_pc_rank_v29_1&spm=1018.2226.3001.4187">Swing</a></p>
-<h3 id="imageIO"><a href="#imageIO" class="headerlink" title="imageIO"></a>imageIO</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import javax.imageio.ImageIO;</span><br></pre></td></tr></table></figure>
-<p>Java使用imageio 读写图像，比较常见。读取如Bird的状态，Ground，Column类的图像（这里用已有素材，自己就PS了）</p>
-<h3 id="源码分类"><a href="#源码分类" class="headerlink" title="源码分类"></a>源码分类</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Birdgame.java //绘制面板，放入背景图 增加鼠标监听器完成对小鸟飞行及游戏运行的控制,设计游戏开始的方法与流程。</span><br><span class="line">Bird.java  //设计小鸟，完成飞行轨迹、与柱子是否碰撞的方法等。</span><br><span class="line">Ground.java  //设计地面类完成移动的效果(移动方法实现)。</span><br><span class="line">Column.java //设计柱子类完成移动的效果(移动方法实现)。</span><br></pre></td></tr></table></figure>
-<p>综上：<br>面向对象的封装：设计包装出小鸟、地面、柱子、游戏四个类。<br>swing和awt包：图形界面工具，绘制出游戏场景。<br>Math类：运用atan等方法辅助完成小鸟旋转角度转换。<br>事件监听器：运用鼠标监听器完成游戏状态转换及小鸟移动。<br>多线程：该项目就用到了一个sleep休眠。</p>
-<h3 id="Welcome-back-AM1ng"><a href="#Welcome-back-AM1ng" class="headerlink" title="Welcome back AM1ng!"></a>Welcome back AM1ng!</h3>
-				
-			</article>
-			<div class="dearmsdan-post-Statistics">
-				<a>2021年07月12日</a>
-				
-				
-			</div>
-		</div>
-		<a href="/2021/07/12/BLOG1/"><div class="dearmsdan-more">阅读更多...</div></a>
-		
-    </div>
-    
-	
-    
-</section>
-	
-
-
-    <nav id="paging">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="DearMsDanIconFont">&#xe627;</i></a>
-    </nav>
-  
-
-<!--
-        prev_text: '<i class="iconfont">&#xe617;</i>',
-        next_text: '<i class="iconfont">&#xe627;</i>'
--->
+<strong>本文链接：</strong>
+	<a href="https://am1ngkk.github.io/2021/12/08/Blog9/" title="https:&#x2F;&#x2F;am1ngkk.github.io&#x2F;2021&#x2F;12&#x2F;08&#x2F;Blog9&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;am1ngkk.github.io&#x2F;2021&#x2F;12&#x2F;08&#x2F;Blog9&#x2F;</a><br>
 </div>
 
+	  
+	</div>
+</div>
+<script>
+	(function(){
+		var jmz = {};
+		jmz.GetLength = function(str) {
+			var realLength = 0, len = str.length, charCode = -1;
+			for (var i = 0; i < len; i++) {
+				charCode = str.charCodeAt(i);
+				if (charCode >= 0 && charCode <= 128) 
+					  realLength += 1;
+				else
+					  realLength += 1;
+			}
+			return realLength;
+		};
+		//console.log(str);
+		var article = document.querySelector('.dearmsdan-post article').innerHTML.trim();
 
-
-
-
-
-
-
-
+		var b = article.replace(/<.*?>/ig,"");
+		
+		$('.post-count').html(jmz.GetLength(b)+"字");
+	})()
+</script>
 
 
     				

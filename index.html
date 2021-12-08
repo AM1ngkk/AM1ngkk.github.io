@@ -189,7 +189,7 @@
 			<nav>
 				
 				<div class="dearmsdan-count">
-					<span>文章</span>10
+					<span>文章</span>11
 					<span>标签</span>0
 					<span>分类</span>0
 				</div>		
@@ -272,7 +272,7 @@
 	  <a href="javascript:;" class="nav-togg" target="_self" ><span>文章归档</span>
 	  </a>
     <div>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
     </div>
   </li>
   
@@ -291,6 +291,10 @@
       <ul>
         
           <li style="font-size: 16px;">
+            <a href="/2021/12/08/Blog9/">算法中的回溯算法</a>
+          </li>
+        
+          <li style="font-size: 16px;">
             <a href="/2021/11/15/Blog8/">算法中的贪心算法</a>
           </li>
         
@@ -304,10 +308,6 @@
         
           <li style="font-size: 16px;">
             <a href="/2021/07/17/BLOG5/">Flying Birds&#39; blog 5th</a>
-          </li>
-        
-          <li style="font-size: 16px;">
-            <a href="/2021/07/17/blog4/">Flying Birds&#39; blog 4th</a>
           </li>
         
       </ul>
@@ -904,6 +904,58 @@ var $main = document.querySelector('.main');
 		<div class="dearmsdan-inner-content">
 		<div class="dearmsdan-inner-img">
 			<div class="dearmsdan-cover-content">
+				<a href="/2021/12/08/Blog9/">
+					<div class="dearmsdan-title"> 
+						算法中的回溯算法
+					</div>
+				</a>
+			</div>
+			
+		</div>
+
+			<article>
+				
+				<p>回溯算法是一种选优搜索法，按选优条件向前搜索，以达到目标。简单的说是在搜索过程中寻找问题的解，当发现已不满足求解条件时，就回溯返回，尝试别的路径。</p>
+<p>当探索到某一步时，发现原先选择不是目前的最优解或不满足问题条件时，就退回一步重新选择，并减去当前步骤的节点对应的值，这种方法为回溯法</p>
+<p>回溯法解题步骤<br>    (1)针对所给问题，确定问题的解空间： 首先应明确定义问题的解空间，问题的解空间应至少包含问题的一个（最优）解。 </p>
+<pre><code>(2)确定结点的扩展搜索规则 
+
+(3)以深度优先方式搜索解空间，并在搜索过程中用剪枝函数避免无效搜索。
+</code></pre>
+<h2 id="AM1ng’s-Algorithm-Blog！"><a href="#AM1ng’s-Algorithm-Blog！" class="headerlink" title="AM1ng’s Algorithm Blog！"></a>AM1ng’s Algorithm Blog！</h2><h2 id="实验题目：-最小重量机器设计问题"><a href="#实验题目：-最小重量机器设计问题" class="headerlink" title="实验题目： 最小重量机器设计问题"></a>实验题目： 最小重量机器设计问题</h2><p>设某一机器由n个部件组成，每一种部件都可以从m个不同的供应商处购得。设wij​是从供应商j 处购得的部件i的重量，cij​是相应的价格。 试设计一个算法，给出总价格不超过d的最小重量机器设计。<br>输入格式：<br>第一行有3 个正整数n ，m和d， 接下来的2n 行，每行n个数。前n行是c，后n行是w。<br>输出格式:<br>输出计算出的最小重量，以及每个部件的供应商</p>
+<h3 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">void BackTrack(int t)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(t==n)//到达最后一层</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(int i=1; i&lt;=m; i++)//遍历所有叶子节点</span><br><span class="line">            &#123;</span><br><span class="line">                cw+=w[t][i];</span><br><span class="line">                cc+=c[t][i];</span><br><span class="line">                x[t]=i;</span><br><span class="line">                <span class="keyword">if</span>(cc&lt;=max_c&amp;&amp;cw&lt;bestw)//若费用不超过最大费用并且重量小于之前的最优解</span><br><span class="line">                 &#123;           </span><br><span class="line">                    //更新最优解</span><br><span class="line">                    bestw=cw;</span><br><span class="line">                    <span class="keyword">for</span>(int j=1; j&lt;=n; j++)</span><br><span class="line">                    bestx[j]=x[j];</span><br><span class="line">                &#125;</span><br><span class="line">                cc-=c[t][i];//返回上一层</span><br><span class="line">                cw-=w[t][i];</span><br><span class="line">                x[t]=0;</span><br><span class="line">                &#125;</span><br><span class="line">             &#125;</span><br><span class="line"><span class="keyword">else</span>//未到达最后一层</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(int i=1; i&lt;=m; i++)//遍历该层节点</span><br><span class="line">            &#123;</span><br><span class="line">                x[t]=i;</span><br><span class="line">                cw+=w[t][i];</span><br><span class="line">                cc+=c[t][i];</span><br><span class="line">                <span class="keyword">if</span>(cc&lt;max_c&amp;&amp;cw&lt;bestw)//费用小于最小费用重量小于最优解时进入下一层</span><br><span class="line">                    &#123;</span><br><span class="line">                        BackTrack(t+1);</span><br><span class="line">                    &#125;</span><br><span class="line">            cc-=c[t][i];//返回上一层</span><br><span class="line">            cw-=w[t][i];</span><br><span class="line">            x[t]=0;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="思路描述"><a href="#思路描述" class="headerlink" title="思路描述"></a>思路描述</h3><p>1.回溯法</p>
+<p>初始化供应商数量及部件数量，然后初始化部件的一些属性作为测试数据。程序关键点是中间变量的总价值取较小的那个，<br>总重量与最小重量c的比对是否达到最小，最优。</p>
+<p>2.算法解释</p>
+<p>利用总长为l，利用数组存储每一个程序占用大小，每存储一个程序，总长l减去对应存储进去程序所需占用的大小，<br>此时计数器count加一，每次循环更新剩余的l的长度，判断是否够存储下一个程序。</p>
+<h3 id="贪回溯法心得体会"><a href="#贪回溯法心得体会" class="headerlink" title="贪回溯法心得体会"></a>贪回溯法心得体会</h3><p>回溯法模板</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">void Backtrack(int t)</span><br><span class="line">&#123;//以深度优先的方式遍历第t层中的某棵子树</span><br><span class="line">    <span class="keyword">if</span>(t&gt;n) &#123; Output(x); <span class="built_in">return</span>; &#125;</span><br><span class="line">    <span class="keyword">if</span> (……) &#123;  </span><br><span class="line">        x[t]=1; Backtrack(t+1);</span><br><span class="line">     &#125;</span><br><span class="line">    <span class="keyword">if</span> (……)  &#123;  </span><br><span class="line">    x[t]=0; Backtrack(t+1);</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>回溯法是一种选优搜索法，即探索与回溯法，又称为试探法，安选优条件向前搜索，以达到目标。<br>如果探索到某一步时，发现无法达到最优解或者无解，则退回到上一步，即回溯，直到选出最优解为止。<br>回溯过程中之前走到的位置，可以是上个选择，也可以是根据算法自定条件的位置，甚至可以是原点，但是一般不考虑原点，会出现死循环。<br>回溯算法解题的一个显著特征，是在搜索解的过程中动态的产生问题的解空间。在任何时候，算法只保存从根节点到当前扩展结点的路劲。<br>如果解空间树中从根节点到叶节点的最长路径的长度为h(n),则回溯法所需要的计算空间通常为O(h(n))。</p>
+<p>More info: <a target="_blank" rel="noopener" href="https://blog.csdn.net/weiyuefei/article/details/79316653?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164672720116780264072398%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164672720116780264072398&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-79316653.article_score_rank&utm_term=%E5%9B%9E%E6%BA%AF%E6%B3%95&spm=1018.2226.3001.4187">回溯法</a></p>
+<h3 id="See-U-next-time！"><a href="#See-U-next-time！" class="headerlink" title="See U next time！"></a>See U next time！</h3>
+				
+			</article>
+			<div class="dearmsdan-post-Statistics">
+				<a>2021年12月08日</a>
+				
+				
+			</div>
+		</div>
+		<a href="/2021/12/08/Blog9/"><div class="dearmsdan-more">阅读更多...</div></a>
+		
+    </div>
+    
+	
+    
+    
+		
+    <div class="dearmsdan-post" id="dearmsdanIndex">
+		<div class="dearmsdan-inner-content">
+		<div class="dearmsdan-inner-img">
+			<div class="dearmsdan-cover-content">
 				<a href="/2021/11/15/Blog8/">
 					<div class="dearmsdan-title"> 
 						算法中的贪心算法
@@ -1307,56 +1359,14 @@ int n; //目标数组
     
 	
     
-    
-		
-    <div class="dearmsdan-post" id="dearmsdanIndex">
-		<div class="dearmsdan-inner-content">
-		<div class="dearmsdan-inner-img">
-			<div class="dearmsdan-cover-content">
-				<a href="/2021/07/09/hello-world/">
-					<div class="dearmsdan-title"> 
-						Welcome Back AM1ngkk!
-					</div>
-				</a>
-			</div>
-			
-		</div>
-
-			<article>
-				
-				<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! 这是am第一个个人博客.主题自Stun和Sakura系列失败后选择了Dearmsdan，有中文注释并且也相对方便理解。基于Hexo Git Node.js 的搭建<br>效率方面和文件夹分类管理习惯息息相关。搭建费了不少时间，关于之前项目的Blog之后会连续更新。以下是几Hexo提示到的基本操作。</p>
-<h2 id="AM1ng’s-Blog！"><a href="#AM1ng’s-Blog！" class="headerlink" title="AM1ng’s Blog！"></a>AM1ng’s Blog！</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<p>第一篇的Blog内容局限于此，主要遇到的问题在有关blog配置文件的config与选择主题之后主题config里语法使用。<br>初学建议从找中文标签的主题开始，其实安装git node 和环境变量配置问题按照步骤很简单。</p>
-<h3 id="See-U-next-time！"><a href="#See-U-next-time！" class="headerlink" title="See U next time！"></a>See U next time！</h3>
-				
-			</article>
-			<div class="dearmsdan-post-Statistics">
-				<a>2021年07月09日</a>
-				
-				
-			</div>
-		</div>
-		<a href="/2021/07/09/hello-world/"><div class="dearmsdan-more">阅读更多...</div></a>
-		
-    </div>
-    
-	
-    
 </section>
 	
 
 
+    <nav id="paging">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="DearMsDanIconFont">&#xe627;</i></a>
+    </nav>
+  
 
 <!--
         prev_text: '<i class="iconfont">&#xe617;</i>',
